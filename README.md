@@ -11,7 +11,7 @@ http://developer.runkeeper.com/healthgraph
 
 ## Installation
 
-- node-runkeeper isn't on NPM yet
+- node-runkeeper isn't on NPM yet, so for now the best way is cloning the respository from Github and making it available to your code
 
 ```bash
 $ git clone git@github.com:/marksoper/node-runkeeper support/runkeeper/
@@ -92,6 +92,8 @@ var API = exports.API = {
                 "uri": "/fitnessActivities"},
 };
 ```
+
+
 
 
 
