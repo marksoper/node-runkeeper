@@ -1,8 +1,8 @@
 
 /*
- * test-getToken.js:  Test 2nd step of Runkeeper Health Graph API handshake
+ * test-getNewToken.js:  Test 2nd step of Runkeeper Health Graph API handshake
  *
- * usage:  node test-getToken.js --code <authorization_code>
+ * usage:  node test-getNewToken.js --code <authorization_code>
  * 
  * <authorization_code> is returned by the api as described in step 1 here:
  * http://developer.runkeeper.com/healthgraph/registration-authorization
@@ -21,7 +21,7 @@ var rkclient = new runkeeper.HealthGraph(options);
 
 // Test getToken
 
-rkclient.getToken(argv.code, function(access_token) {
+rkclient.getNewToken(argv.code, function(access_token) {
 	rkclient.access_token = access_token;
 	console.log("client access_token: " + rkclient.access_token);
     });
