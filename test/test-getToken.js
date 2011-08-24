@@ -14,6 +14,15 @@ var argv = require('optimist').argv,
 
 console.log("Getting token for code: " + argv.code);
 
+// Set up client
+
 var runkeeper = require('../lib/runkeeper');
-var rk = new runkeeper.HealthGraphClient(options);
+var rkclient = new runkeeper.HealthGraph(options);
+
+// Test getToken
+
+rkclient.getToken(argv.code, function(access_token) {
+	rkclient.access_token = access_token;
+	console.log("client access_token: " + rkclient.access_token);
+    });
 
