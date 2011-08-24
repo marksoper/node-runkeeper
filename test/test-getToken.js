@@ -9,11 +9,11 @@
  *
  */
 
-var argv = require('optimist').argv;
+var argv = require('optimist').argv,
+    options = require('./config').options;
 
 console.log("Getting token for code: " + argv.code);
 
 var runkeeper = require('../lib/runkeeper');
-
-var rk = new runkeeper.HealthGraphClient();
+var rk = new runkeeper.HealthGraphClient(options);
 
