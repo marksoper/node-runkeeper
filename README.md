@@ -18,7 +18,7 @@ $ git clone git@github.com:/marksoper/node-runkeeper support/runkeeper/
 ```
 ```javascript
 // in your code
-require.paths.unshift('support/runkeeper/lib')
+require.paths.unshift('support/runkeeper/lib');
 ```
 
 ## Creating a client
