@@ -1,6 +1,6 @@
 
 /*
- * test-getUser.js:  Test the /user api call
+ * test-fitnessActivityFeed.js
  *
  */
 
@@ -13,8 +13,8 @@ var rkclient = new runkeeper.HealthGraph(options);
 
 // Test getUser
 
-rkclient.getUser(function(user) {
-	rkclient.user = user;
-	console.log("user: " + user);
+rkclient.fitnessActivityFeed(function(data) {
+	rkclient.fitnessActivityFeed = data;
+	console.log("fitnessActivityFeed: " + data);
     });
 
