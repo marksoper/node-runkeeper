@@ -1,0 +1,15 @@
+{
+  "name": "node-runkeeper",
+  "version": "0.1.0",
+  "devDependencies": {
+    "optimist": "0.3.1",
+    "request": "2.9.100"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marksoper/node-runkeeper.git"
+  }
+}
