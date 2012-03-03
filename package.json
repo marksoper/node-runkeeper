@@ -1,6 +1,6 @@
 {
   "name": "node-runkeeper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
     "optimist": "0.3.1",
     "request": "2.9.100"
