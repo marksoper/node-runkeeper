@@ -13,7 +13,7 @@ var rkclient = new runkeeper.HealthGraph(options);
 
 // Test getUser
 
-rkclient.profile(function(profile) {
+rkclient.profile(options.access_token, function(profile) {
 	rkclient.profile = profile;
 	console.log("profile: " + profile);
     });

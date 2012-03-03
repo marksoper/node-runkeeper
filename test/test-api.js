@@ -16,7 +16,7 @@ var rkclient = new runkeeper.HealthGraph(options);
 
 for (func in API) {
     console.log("-----testing: rkclient." + func);
-    rkclient[func](function(response) {
+    rkclient[func](options.access_token, function(response) {
     	    console.log("response in callback for: rkclient." + func + "\n:" + response + "\n\n");
     	});
 };
