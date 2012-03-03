@@ -1,10 +1,12 @@
 {
   "name": "node-runkeeper",
-  "version": "0.1.1",
+  "author": "Mark Soper <masoper@gmail.com>",
+  "version": "0.1.2",
   "devDependencies": {
     "optimist": "0.3.1",
     "request": "2.9.100"
   },
+  "main": "./index.js",
   "engines": {
     "node": ">= 0.4.0"
   },
